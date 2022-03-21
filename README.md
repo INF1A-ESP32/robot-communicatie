@@ -107,18 +107,24 @@ Wanneer de robot tegen een fout aanloopt kan deze verschillende errors teruggeve
 
 ## Statistieken
 De robot zal elke 5 seconden statistieken naar de server sturen met de volgende gegevens
+
+### Verschillende status meldingen
+```
+preparing       - De robot is nog niet klaar met opstarten
+preparing_game  - De robot is bezig met het voorbereiden van een spel
+ready           - De robot is klaar om een verzoek te ontvangen/spel starten/spel voorbereiden
+in_game         - De robot is bezig met een spel
+finished        - De robot is klaar met het spel en bij het einde aangekomen
+```
+### isDriving
+isDriving kan de volgende waardes hebben `true` of `false`
+
+### Acceleration
+acceleration heeft een heel getal met de waarde van de acceleratie
 ```json
 {
-    /*
-    Verschillende status meldingen
-    preparing - De robot is nog niet klaar met opstarten
-    preparing_game - De robot is bezig met het voorbereiden van een spel
-    ready - De robot is klaar om een verzoek te ontvangen/spel starten/spel voorbereiden
-    in_game - De robot is bezig met een spel
-    finished - De robot is klaar met het spel en bij het einde aangekomen
-    */
     "status": "in_game",
-    "isDriving": false, // true of false
-    "acceleration": 22 // snelheid van de acceleratie in een heel getal
+    "isDriving": false,
+    "acceleration": 22 
 }
 ```
