@@ -98,7 +98,9 @@ Wanneer de robot tegen een fout aanloopt kan deze verschillende errors teruggeve
 }
 ```
 
-### Wanneer de robot geen geldige json ontvangt
+### Wanneer er ongeldige json verstuurd word
+Deze error kan van de robot naar de server worden verstuurd en andersom
+
 ```json
 {
     "error": "INVALID_JSON"
